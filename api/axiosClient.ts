@@ -4,8 +4,10 @@ import { getAccessToken, refreshToken } from 'utils/auth';
 type IConfig = AxiosRequestConfig;
 
 const axiosClient = axios.create({
-  // baseURL: 'https://restaurant-uit-server.herokuapp.com',
-  baseURL: 'http://localhost:8080',
+  baseURL: '/api',
+  headers: {
+    'Content-Type': 'application/json',
+  }
 });
 
 // Interceptors
@@ -15,7 +17,6 @@ axiosClient.interceptors.request.use(
     const token = getAccessToken();
     if (token) {
       config.headers = {
-        'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`,
       };
     }
@@ -44,7 +45,6 @@ axiosClient.interceptors.response.use(
         try {
           const accessToken = await refreshToken();
           axiosClient.defaults.headers.common = {
-            'Content-Type': 'application/json',
             'Authorization': `Bearer ${accessToken}`,
           };
 
