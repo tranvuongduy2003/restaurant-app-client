@@ -11,6 +11,11 @@ const userApi = {
     return axiosClient.post(url, data);
   },
 
+  signup(data: any) {
+    const url = '/auth/signup';
+    return axiosClient.post(url, data);
+  },
+
   logout(id: any) {
     const url = `/auth/logout/${id}`;
     return axiosClient.post(url);
