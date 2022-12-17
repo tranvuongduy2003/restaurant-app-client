@@ -32,6 +32,9 @@
   },
   "devDependencies": {
     "@types/cookies": "^0.7.7",
-    "@types/http-proxy": "^1.17.9"
+    "@types/http-proxy": "^1.17.9",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
   }
 }

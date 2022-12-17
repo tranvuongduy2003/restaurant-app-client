@@ -1,4 +1,4 @@
-import userApi from 'api/userApi';
+import userApi from 'apis/userApi';
 
 export function getAccessToken() {
   const accessToken: string = localStorage.getItem('access_token') as string;

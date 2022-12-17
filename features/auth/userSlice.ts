@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { RootState } from 'app/store';
 import { ILogin } from 'utils/interface';
-import userApi from 'api/userApi';
+import userApi from 'apis/userApi';
 import storage from 'redux-persist/lib/storage';
 
 export const login = createAsyncThunk('user/login', async (payload: ILogin) => {
