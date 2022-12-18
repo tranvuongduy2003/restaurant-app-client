@@ -73,7 +73,7 @@ const SignUpPage: React.FunctionComponent<ISignUpPageProps> = (props) => {
     <div className="flex w-full h-screen">
       <div className="w-1/3 p-16">
         <h2 className="text-4xl font-medium after:content-[''] after:my-4 after:w-10 after:h-1 after:bg-secondary after:block after:rounded-full">
-          Sign up
+          Đăng ký
         </h2>
         <form onSubmit={handleSubmit(handleSignUp)} className="my-10">
           <Field>
@@ -123,10 +123,10 @@ const SignUpPage: React.FunctionComponent<ISignUpPageProps> = (props) => {
             )}
           </Field>
           <Field>
-            <p>
-              Already have an account?{' '}
+            <p className="">
+              Nếu bạn đã có tài khoản, xin mời{' '}
               <Link href="/auth/login" className="text-secondary">
-                Login
+                Đăng nhập
               </Link>
             </p>
           </Field>

@@ -1,7 +1,9 @@
 export default function Home() {
   return (
     <>
-      <div></div>
+      <header>Header</header>
+      <section>App Introduction</section>
+      <section>Category</section>
     </>
   );
 }

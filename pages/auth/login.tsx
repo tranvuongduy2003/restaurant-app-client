@@ -59,7 +59,7 @@ const LoginPage: React.FunctionComponent<ILoginPageProps> = (props) => {
     <div className="flex w-full h-screen">
       <div className="w-1/3 p-16">
         <h2 className="text-4xl font-medium after:content-[''] after:my-4 after:w-10 after:h-1 after:bg-primary after:block after:rounded-full">
-          Login
+          Đăng nhập
         </h2>
         <form onSubmit={handleSubmit(handleLogin)} className="my-10">
           <Field>
@@ -87,9 +87,9 @@ const LoginPage: React.FunctionComponent<ILoginPageProps> = (props) => {
           </Field>
           <Field>
             <p>
-              Create new accont?{' '}
+              Tạo tài khoản mới ngay?{' '}
               <Link href="/auth/signup" className="text-primary">
-                Sign up
+                Đăng ký
               </Link>
             </p>
           </Field>
