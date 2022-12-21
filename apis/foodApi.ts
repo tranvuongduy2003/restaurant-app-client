@@ -9,6 +9,16 @@ const foodApi = {
     return axiosClient.get<IFoods>(url);
   },
 
+  getBestDeals() {
+    const url: string = '/food/best-deals';
+    return axiosClient.get<IFoods>(url);
+  },
+
+  getPopular() {
+    const url: string = '/food/popular';
+    return axiosClient.get<IFoods>(url);
+  },
+
   getDeleted(page?: number, categoryId?: string, search?: string) {
     const url: string = `/food/deleted?page=${page || ''}&category=${
       categoryId || ''

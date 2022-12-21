@@ -16,22 +16,22 @@ const links: Link[] = [
   {
     id: 0,
     url: '/',
-    title: 'Home',
+    title: 'Trang chủ',
   },
   {
     id: 1,
     url: '/about',
-    title: 'About',
+    title: 'Giới thiệu',
   },
   {
     id: 2,
     url: '/foods',
-    title: 'Foods',
+    title: 'Món ăn',
   },
   {
     id: 3,
     url: '/categories',
-    title: 'Categories',
+    title: 'Danh mục',
   },
 ];
 
@@ -83,15 +83,15 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
           <div className="flex overflow-visible">
             <Link
               href="/auth/login"
-              className="px-8 py-2 rounded-full shadow-login bg-primary"
+              className="px-6 py-2 rounded-full shadow-login bg-primary"
             >
-              <span className="text-lg font-medium text-white">Login</span>
+              <span className="text-lg font-medium text-white">Đăng nhập</span>
             </Link>
             <Link
               href="/auth/signup"
               className="px-6 py-2 text-lg font-medium drop-shadow-center"
             >
-              Signup
+              Đăng ký
             </Link>
           </div>
         </div>
